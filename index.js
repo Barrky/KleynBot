@@ -39,6 +39,15 @@ client.on("ready", () => {
         }
         });
 
+      client.on('message', message => {
+        if (message.content.startsWith('!say')) {
+        var string = (message.content)
+        var result = string.replace(/^!say\s/i, " ");
+        message.channel.sendMessage(result)
+        console.log("Say you !")
+          }
+        });
+
 client.on('message', message => {
 
 const warn = require("./commands/moderation/warn.js");
