@@ -140,5 +140,4 @@ invite(message, prefix, client)
 
   });
 
-app.listen(5000);
 client.login('process.env.TOKEN')
