@@ -88,4 +88,4 @@ invite(message, prefix, client)
   });
 
 app.listen(5000);
-client.login('MzgzNzM4NTg3OTIzMDg3MzYy.DTVl9w.JlSgM_FNShWTCeZX3-cm1mqAyvU')
+client.login('process.env.TOKEN')
