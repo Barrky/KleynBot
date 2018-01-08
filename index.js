@@ -40,13 +40,69 @@ client.on("ready", () => {
         });
 
       client.on('message', message => {
-        if (message.content.startsWith('!say')) {
-        var string = (message.content)
-        var result = string.replace(/^!say\s/i, " ");
-        message.channel.sendMessage(result)
-        console.log("Say you !")
-          }
-        });
+          if (message.content.startsWith('!say')) {
+          var string = (message.content)
+          var result = string.replace(/^!say\s/i, " ");
+          message.channel.sendMessage(result)
+          console.log("Say you !")
+            }
+          });
+
+          client.on('message', message => {
+            if (message.content === (prefix + 'chien')) {
+               message.channel.sendFile("https://i.ytimg.com/vi/wSTt04rOwa8/maxresdefault.jpg")
+                        console.log("Chien demandée !")
+            }
+          });
+          
+          client.on('message', message => {
+            if (message.content === (prefix + 'chat')) {
+               message.channel.sendFile("https://fr.animalblog.co/wp-content/uploads/2013/02/chat-content.jpg")
+                        console.log("Chat demandée !")
+            }
+          });
+      
+          client.on('message', message => {
+            if (message.content === (prefix + 'thug')) {
+              message.reply('Thug life ! :open_mouth:')
+               message.channel.sendFile("https://i.ytimg.com/vi/gw5oB7VqUpI/maxresdefault.jpg")
+                        console.log("Thug demandée !")
+            }
+          });
+      
+          client.on('message', message => {
+            if (message.content === (prefix + 'dab')) {
+              message.reply('BITCH DAB !')
+               message.channel.sendFile("https://i.ytimg.com/vi/GRpJk1uERKA/maxresdefault.jpg")
+                        console.log("DAB demandée !")
+            }
+          });
+      
+          client.on('message', message => {
+            if (message.content === (prefix + 'sucide')) {
+              message.reply('Enrevoir ')
+              message.channel.sendFile("http://lawofficer.com/wp-content/uploads/2017/01/suicide.jpg")
+              console.log("Quelqu'un c'est sucider !")
+            }
+          });
+      
+          client.on('message', message => {
+            if (message.content.startsWith(prefix + 'kill')) {
+            let member = message.mentions.members.first();
+                message.channel.sendMessage('Aurevoir ' + member)
+                message.channel.sendFile("https://image.noelshack.com/fichiers-sm/2017/47/7/1511719852-234776-theratter-i-only-shoot-to-kill.jpg")
+                console.log("Quelqu'un à fait un kill !")
+              }
+            });
+      
+           client.on('message', message => {
+              if (message.content.startsWith(prefix + 'calin')) {
+              let member = message.mentions.members.first();
+                  message.channel.sendMessage('CALINNN ' + member )
+                  message.channel.sendFile("https://media.giphy.com/media/16bJmyPvRbCDu/giphy.gif")
+                  console.log("Quelqu'un à fait un calin !!")
+                }
+              });
 
 client.on('message', message => {
 
