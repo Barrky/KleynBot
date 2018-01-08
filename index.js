@@ -1,8 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const token = process.env.TOKEN;
-const express = require("express");
-var app = express();
 var prefix = "/";
 var guild = client.guilds.get("379316320384319488")
 var add = client.channels.get("379320704216334336")
