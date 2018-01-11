@@ -140,4 +140,4 @@ invite(message, prefix, client)
 
   });
 
-client.login('process.env.TOKEN')
+client.login('Mzk4OTE4MjM3MzU1NjM4Nzg0.DTjp6A.-T7myKVPEn_nkX_W8NJtpd8FAc4')
