@@ -103,19 +103,19 @@ client.on("ready", () => {
 
 client.on('message', message => {
 
-const warn = require("./commands/moderation/warn.js");
-const addrole = require("./commands/moderation/addrole.js");
-const rmrole = require("./commands/moderation/rmrole.js");
-const ban = require("./commands/moderation/ban.js");
-const kick = require("./commands/moderation/kick.js");
-const mute = require("./commands/moderation/mute.js");
-const purge = require("./commands/moderation/purge.js");
-const unmute = require("./commands/moderation/unmute.js");
-const embed = require("./commands/moderation/embed.js");
-const eval = require("./commands/Owner/eval.js");
-const logout = require("./commands/Owner/logout.js");
-const aide = require("./commands/Sarah/aide.js");
-const invite = require("./commands/Sarah/invite.js");
+const warn = require("C:\Sarah-master\commands\warn.js");
+const addrole = require("C:\Sarah-master\commands\addrole.js");
+const rmrole = require("C:\Sarah-master\commands\rmrole.js");
+const ban = require("C:\Sarah-master\commands\ban.js");
+const kick = require("C:\Sarah-master\commands\kick.js");
+const mute = require("C:\Sarah-master\commands\mute.js");
+const purge = require("C:\Sarah-master\commands\purge.js");
+const unmute = require("C:\Sarah-master\commands\unmute.js");
+const embed = require("C:\Sarah-master\commands\embed.js");
+const eval = require("C:\Sarah-master\commands\eval.js");
+const logout = require("C:\Sarah-master\commands\logout.js");
+const aide = require("C:\Sarah-master\commands\aide.js");
+const invite = require("C:\Sarah-master\commands\invite.js");
 
 client.on('message', message => {
   if (message.content === 'Bvn') {
